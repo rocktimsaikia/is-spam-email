@@ -29,7 +29,7 @@ isSpamEmail("foobar@10dk.email");
 
 A predicate to check whether an email is spam or not.
 
-#### Parameters
+#### Parameters:
 
 ##### 1.
 
