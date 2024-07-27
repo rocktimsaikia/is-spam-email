@@ -2,9 +2,9 @@
 
 Checks whether an email is spam or not.
 
-> It just checks against an [JSON](./spam-domains.json) file of spam domains in a optimised way. \
+> It just checks against a [JSON](./spam-domains.json) file of spam domains in an optimised way. \
 > If any other spam domains are missing, feel free to open a PR. \
-> This JSON file is free to be used anywhere.
+> The JSON file can be used wherever.
 
 [![CI](https://github.com/rocktimsaikia/is-spam-email/actions/workflows/main.yml/badge.svg)](https://github.com/rocktimsaikia/is-spam-email/actions/workflows/main.yml) [![npm](https://img.shields.io/npm/v/is-spam-email?color=bright)](https://npmjs.com/package/is-spam-email)
 
