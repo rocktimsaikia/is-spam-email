@@ -2,11 +2,7 @@
 	"name": "is-spam-email",
 	"version": "0.0.1",
 	"description": "Checks whether an email is spam or not.",
-	"keywords": [
-		"is-spam-email",
-		"spam",
-		"email"
-	],
+	"keywords": ["is-spam-email", "spam", "email"],
 	"repository": "rocktimsaikia/is-spam-email",
 	"funding": "https://github.com/sponsors/rocktimsaikia",
 	"license": "MIT",
@@ -18,9 +14,7 @@
 	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"files": [
-		"dist"
-	],
+	"files": ["dist", "spam-domains.json"],
 	"scripts": {
 		"build": "tsup",
 		"test": "vitest"
@@ -37,13 +31,8 @@
 		"node": ">=18"
 	},
 	"tsup": {
-		"entry": [
-			"src/index.ts"
-		],
-		"format": [
-			"cjs",
-			"esm"
-		],
+		"entry": ["src/index.ts"],
+		"format": ["cjs", "esm"],
 		"minify": true,
 		"clean": true,
 		"dts": true
