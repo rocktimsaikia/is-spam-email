@@ -1,0 +1,40 @@
+{
+	"name": "is-spam-email",
+	"version": "0.0.0",
+	"description": "Checks whether an email is spam or not.",
+	"keywords": ["is-spam-email", "spam", "email"],
+	"repository": "rocktimsaikia/is-spam-email",
+	"funding": "https://github.com/sponsors/rocktimsaikia",
+	"license": "MIT",
+	"author": {
+		"name": "Rocktim Saikia",
+		"email": "rocktimthedev@gmail.com",
+		"url": "https://rocktimsaikia.dev"
+	},
+	"type": "module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": ["dist"],
+	"scripts": {
+		"build": "tsup",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@types/node": "^20.14.12",
+		"tsup": "^8.2.3",
+		"tsx": "^4.16.2",
+		"typescript": "^5.5.4",
+		"vitest": "^2.0.4"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"tsup": {
+		"entry": ["src/index.ts"],
+		"format": ["cjs", "esm"],
+		"minify": true,
+		"clean": true,
+		"dts": true
+	}
+}
