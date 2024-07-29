@@ -1,6 +1,6 @@
 {
 	"name": "is-spam-email",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"description": "Checks whether an email is spam or not.",
 	"keywords": [
 		"is-spam-email",
