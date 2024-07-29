@@ -24,9 +24,9 @@
 	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"files": ["dist", "spam-domains.json"],
+	"files": ["dist"],
 	"scripts": {
-		"build": "tsup",
+		"build": "tsup && cp spam-domains.json ./dist",
 		"test": "vitest",
 		"release": "pnpm build && np"
 	},
