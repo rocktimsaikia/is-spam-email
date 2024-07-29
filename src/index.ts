@@ -1,11 +1,10 @@
-import fs from "fs";
+import spamDomainsJson from "../spam-domains.json";
 
 let spamDomainSet: Set<string> | undefined;
 
 function loadSpamDomains(): Set<string> {
 	if (!spamDomainSet) {
-		const data = fs.readFileSync("spam-domains.json", "utf-8");
-		spamDomainSet = new Set(JSON.parse(data));
+		spamDomainSet = new Set(spamDomainsJson);
 	}
 	return spamDomainSet;
 }
