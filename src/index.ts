@@ -1,12 +1,10 @@
 import fs from "fs";
-import path from "path";
 
 let spamDomainSet: Set<string> | undefined;
 
 function loadSpamDomains(): Set<string> {
 	if (!spamDomainSet) {
-		const filePath = path.join(process.cwd(), "spam-domains.json");
-		const data = fs.readFileSync(filePath, "utf-8");
+		const data = fs.readFileSync("spam-domains.json", "utf-8");
 		spamDomainSet = new Set(JSON.parse(data));
 	}
 	return spamDomainSet;
