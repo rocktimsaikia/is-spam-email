@@ -12,6 +12,7 @@ test("Should validate spam emails", async () => {
 	expect(await isSpamEmail("foobar@10dk.email")).toBe(true);
 	expect(await isSpamEmail("foobar@0w.ro")).toBe(true);
 	expect(await isSpamEmail("foobar@zyte.site")).toBe(true);
+	expect(await isSpamEmail("foobar@zzzz1717.com")).toBe(true);
 });
 
 test("Should throw on invalid emails", async () => {
