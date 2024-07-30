@@ -10,7 +10,7 @@ Not supported in browsers or the CJS ecosystem.
 ## Installtion
 
 ```sh
-pnpm add is-spam-email
+npm i is-spam-email
 ```
 
 ## Usage
