@@ -24,7 +24,7 @@ isSpamEmail("foobar@10dk.email");
 
 ## API
 
-### `isSpamEmail(email)`
+### isSpamEmail(email)
 
 A predicate to check whether an email is spam or not.
 
