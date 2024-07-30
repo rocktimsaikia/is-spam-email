@@ -24,7 +24,10 @@
 	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"files": ["dist", "domains.txt"],
+	"files": [
+		"dist",
+		"domains.txt"
+	],
 	"scripts": {
 		"build": "tsup",
 		"test": "vitest",
@@ -42,10 +45,17 @@
 		"node": ">=18"
 	},
 	"tsup": {
-		"entry": ["src/index.ts"],
-		"format": ["esm"],
+		"entry": [
+			"src/index.ts"
+		],
+		"format": [
+			"esm"
+		],
 		"minify": true,
 		"clean": true,
 		"dts": true
+	},
+	"dependencies": {
+		"browser-or-node": "3.0.0-pre.0"
 	}
 }
