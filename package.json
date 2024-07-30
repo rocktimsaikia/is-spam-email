@@ -1,6 +1,6 @@
 {
 	"name": "is-spam-email",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"description": "Checks whether an email is spam or not.",
 	"keywords": [
 		"is-spam-email",
@@ -24,7 +24,10 @@
 	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"files": ["dist", "spam-domains.json"],
+	"files": [
+		"dist",
+		"spam-domains.json"
+	],
 	"scripts": {
 		"build": "tsup",
 		"test": "vitest",
@@ -42,8 +45,12 @@
 		"node": ">=18"
 	},
 	"tsup": {
-		"entry": ["src/index.ts"],
-		"format": ["esm"],
+		"entry": [
+			"src/index.ts"
+		],
+		"format": [
+			"esm"
+		],
 		"minify": true,
 		"clean": true,
 		"dts": true
