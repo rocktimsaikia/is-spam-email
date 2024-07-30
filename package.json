@@ -24,10 +24,7 @@
 	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"files": [
-		"dist",
-		"spam-domains.json"
-	],
+	"files": ["dist", "domains.txt"],
 	"scripts": {
 		"build": "tsup",
 		"test": "vitest",
@@ -45,12 +42,8 @@
 		"node": ">=18"
 	},
 	"tsup": {
-		"entry": [
-			"src/index.ts"
-		],
-		"format": [
-			"esm"
-		],
+		"entry": ["src/index.ts"],
+		"format": ["esm"],
 		"minify": true,
 		"clean": true,
 		"dts": true
